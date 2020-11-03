@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+}
+
+.container {
+    background: white;
+}
+
+/* Top Containers */
+.top-container {
+    display: flex;
+    width: 100%;
+}
+
+.top-container-1 {
+    max-width: 720px;
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+.top-container-1 h1{
+    color: purple;
+    padding: 0 50px;
+}
+
+.top-container-1 P {
+    padding: 0 50px;
+    color: grey;
+}
+
+.top-container-2 {
+    width: 100%;
+    text-align: center;
+}
+
+.review-1, .review-2, .review-3 {
+    background: lightgray;
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.review-1 {
+    margin-top: 30px;
+    right: 200px;
+}
+
+.review-2 {
+    margin-top: 90px;
+    right: 140px;
+}
+.review-3 {
+    margin-top: 150px;
+    right: 110px;
+}
+
+/* Reviewer Comments */
+#comments {
+    display: flex;
+}
+.boxes {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background: purple;
+    margin: 0 30px;
+    border-radius: 5%;
+    height: 300px;
+    width: 400px;
+}
+
+.box-1 {
+    margin-top: 30px;
+}
+
+.box-2 {
+    margin-top: 60px;
+}
+
+.box-3 {
+    margin-top: 90px;
+}
+
+.identity {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.identity-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.identity h4 {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.box-1-comments, .box-2-comments, .box-3-comments {
+    color: lightgrey;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.name {
+    color: wheat;
+}
+
+.verified-buyer {
+    color: orchid;
+}
+
+/* Media Queries */
+@media(max-width: 375px) {
+    body {
+        max-width: 375px;
+    }
+
+    .container {
+        flex-direction: column;
+    } 
+     
+    .top-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+   .review-1 {
+       position: relative;
+       left: 5px;
+       text-align: center;
+       width: 300px;
+       margin-top: 0;
+       margin-bottom: 0;
+   }
+
+   .review-2 {
+       position: relative;
+       left: 5px;
+       width: 300px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+   }
+
+   .review-3 {
+       position: relative;
+       left: 5px;
+       width: 300px;
+       margin: 0;
+   }
+
+    .bottom-container {
+        width: 375px;
+        margin-top: 50px;
+    }
+
+    .boxes {
+        flex-direction: column;
+        width: 350px;
+        margin: 10px 10px;
+    }
+}
